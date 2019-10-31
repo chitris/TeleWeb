@@ -1,0 +1,34 @@
+#capaAnimada{
+	width: 300px;
+	height: 300px;
+	background: #F00;
+	padding-top: 30px;
+	/*prefijos, -webkit-,-moz-,-o-,-ms-*/
+	-webkit-animation-name:animacion;/*establecemos el nombre de la animacion*/
+	-webkit-animation-duration:5s;/*duracion de la animacion*/
+	-webkit-animation-iteration-count:infinite;/*cuantas veces queremos que se ejecute la animacion*/
+	-webkit-animation-direction:altenate;/* que la animacion vaya hacia adelante y luego hacia atras de manera gradual*/
+	-webkit-animation-play-state:paused;/*estalado de la animacion*/
+
+	-moz-animation-name:animacion;/*establecemos el nombre de la animacion*/
+	-moz-animation-duration:5s;/*duracion de la animacion*/
+	-moz-animation-iteration-count:infinite;/*cuantas veces queremos que se ejecute la animacion*/
+	-moz-animation-direction:altenate;/* que la animacion vaya hacia adelante y luego hacia atras de manera gradual*/
+	-moz-animation-play-state:paused;/*estalado de la animacion*/
+
+}
+/*Comenzado nuestro keyframe*/
+@-webkit-keyframes animacion{
+	from{
+		width: 300px;
+	}
+	to{
+		width: 500px;
+		height: 500px;
+		background: #000066;
+		border-radius: 5em;
+	}
+}
+#capaAnimada:hover{
+	-webkit-animation-play-state:running;
+}
